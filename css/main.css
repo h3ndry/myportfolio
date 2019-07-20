@@ -1,0 +1,25 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+  color: white;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-image: url(../img/SVG/bg.svg) no-repeat;
+  background-size: cover;
+  padding-bottom: 500px;
+  height: 100%;
+}
+
+#left {
+  position: absolute;
+  top: 60%;
+}
+/*# sourceMappingURL=main.css.map */
