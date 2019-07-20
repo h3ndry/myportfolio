@@ -15,7 +15,6 @@ header {
   height: 100%;
   width: 100%;
   position: relative;
-  background: url(../img/SVG/bg.svg) no-repeat;
   background-size: cover;
   background-position: center;
   padding-bottom: 500px;
