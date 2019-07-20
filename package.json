@@ -1,0 +1,19 @@
+{
+  "name": "myportfolio",
+  "version": "1.0.0",
+  "description": "This is my website for personal reasons",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simangaH/myportfolio.git"
+  },
+  "author": "Simanga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/simangaH/myportfolio/issues"
+  },
+  "homepage": "https://github.com/simangaH/myportfolio#readme"
+}
