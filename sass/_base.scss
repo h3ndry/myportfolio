@@ -1,0 +1,25 @@
+// css Variable 
+:root {
+  --color-pri: #3c1053;
+  --color-sec: #ad5389;
+  --color-text: #dddbdb;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+}
+
+
+
+// All the base setting on this folder

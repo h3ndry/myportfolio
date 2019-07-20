@@ -1,9 +1,46 @@
-body,
-html {
-  height: 100vh;
+:root {
+  --color-pri: #3c1053;
+  --color-sec: #ad5389;
+  --color-text: #dddbdb;
+}
+
+*,
+*::after,
+*::before {
   margin: 0;
-  color: white;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-home {
+  position: relative;
+}
+
+.header-home__hero-text {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.heading-pri {
+  color: var(--color-text);
+  font-size: 4.6rem;
+  text-transform: uppercase;
+  letter-spacing: .5rem;
 }
 
 a {
