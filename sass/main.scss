@@ -1,33 +1,5 @@
 @import"base";
-@import"comonets";
+@import"componets";
 @import"layout";
 @import"mixin";
 @import"typography";
-
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-header {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 500px;
-}
-
-#right {
-  height: 200px;
-  position: absolute;
-  top: 40%;
-  right: 0;
-}
-
-#left {
-  height: 200px;
-  position: absolute;
-  top: 60%;
-}

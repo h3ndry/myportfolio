@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,27 +9,76 @@
   <link rel="stylesheet" href="css/ionicons.css">
   <title>Simanga Hendry | Computer Programmer</title>
 </head>
+
 <body>
-  <header class="header-home">
-      <svg id="header" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1366 540.72">
-        <defs>
-          <linearGradient id="linear-gradient" x1="-0.5" y1="269.86" x2="1365.5" y2="269.86" gradientUnits="userSpaceOnUse">
-            <stop offset="0" stop-color="#ad5389"/><stop offset="1" stop-color="#3c1053"/>
-          </linearGradient>
-        </defs>
-        <title>header</title>
-        <path d="M-.5-.5V478s343.5-140,678,0,688,0,688,0V-.5Z" transform="translate(0.5 0.5)" style="fill:url(#linear-gradient)"/>
-      </svg>
+  <div class="container">
+    <div class="profile-view">
+      <div class="profile">
+        <h1 class="profile__name">
+          Simanga Hendry
+          <span>Computer Engineer</span>
+        </h1>
+        <img src="img/user.jpg" alt="Picture of me" class="profile__photo">
+        <div class="profile__details">
+          <p><span>Name:</span> Simanga Hendry</p>
+          <p><span>Surname:</span> Khoza</p>
+          <p><span>Contact:</span> simanhahk@gmail.com</p>
+          <p><span>Qualif.</span> Computer System Eng</p>
+        </div>
 
-      <div class="header-home__hero-text">
-        <h1 class="heading-pri">Simanga Hendry</h1>
-        <i></i>
-
+        <button class="btn-download">Download My CV</button>
       </div>
-  </header>
-  <section class="section-about">
-    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas expedita voluptate dolores sapiente minima ut laboriosam, exercitationem amet magni quod!
-  </section>
-  
+    </div>
+
+    <div class="main-view">
+      <header class="header">
+        <div class="home">
+          <a href="#">
+            <svg class="home__icon">
+              <use xlink:href="img/sprite.svg#icon-home"></use>
+            </svg>
+          </a>
+        </div>
+
+        <nav class="nav">
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">Reasumer</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
+          </ul>
+        </nav>
+
+        <div class="social">
+          <ul class="social__list">
+            <li class="social__item"><a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a></li>
+            <li class="social__item"><a href="#" class="social__link">
+                <svg class="social__icon">
+                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                </svg>
+              </a></li>
+          </ul>
+        </div>
+
+        <button class="btn-hire">Hire Me</button>
+
+      </header>
+    </div>
+  </div>
 </body>
+
 </html>

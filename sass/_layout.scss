@@ -1,10 +1,25 @@
-.header-home {
-  position: relative;
+.container {
+  max-width: 112rem;
+  margin: 4rem auto;
+  //background-color: pink;
+  display: flex;
 
-  &__hero-text {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  min-height: 100vh;
+}
+
+.profile-view {
+  flex: 0 0 30%;
+  //background-color: brown;
+
+
+}
+
+.main-view {
+  flex: 1;
+  //background-color: aquamarine;
+}
+
+.header {
+  display: flex;
+  
 }

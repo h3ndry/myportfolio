@@ -1,7 +1,15 @@
 :root {
-  --color-pri: #3c1053;
+  --color-pri: #ffc410;
   --color-sec: #ad5389;
   --color-text: #dddbdb;
+  --color-grey-light-1: #faf9f9;
+  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-3: #f0eeee;
+  --color-grey-light-4: #ccc;
+  --color-grey-dark-1: #333;
+  --color-grey-dark-2: #777;
+  --color-grey-dark-3: #999;
+  --shadow-dark: 0 2rem 6rem rgba(black, .3);
 }
 
 *,
@@ -16,20 +24,72 @@ html {
 }
 
 body {
+  color: var(--color-grey-dark-2);
+  font-family: 'Open Sans', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  line-height: 1.6;
+  font-weight: 400;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  background-color: var(--color-grey-light-1);
 }
 
-.header-home {
-  position: relative;
+.profile > *:not(:last-child) {
+  margin-bottom: 2.5rem;
 }
 
-.header-home__hero-text {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
+.profile__name {
+  text-transform: uppercase;
+  color: var(--color-grey-dark-1);
+  font-size: 2.4rem;
+}
+
+.profile__name span {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 200;
+  line-height: 1;
+  display: block;
+  font-size: 1.4rem;
+}
+
+.profile__photo {
+  width: 25.5rem;
+  display: block;
+}
+
+.profile__details {
+  font-size: 1.5rem;
+}
+
+.profile__details p span {
+  -webkit-columns: var(--color-grey-dark-1);
+          columns: var(--color-grey-dark-1);
+}
+
+.container {
+  max-width: 112rem;
+  margin: 4rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+
+.profile-view {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+.main-view {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body {
@@ -41,32 +101,5 @@ body {
   font-size: 4.6rem;
   text-transform: uppercase;
   letter-spacing: .5rem;
-}
-
-a {
-  color: white;
-  text-decoration: none;
-}
-
-header {
-  height: 100%;
-  width: 100%;
-  position: relative;
-  background-size: cover;
-  background-position: center;
-  padding-bottom: 500px;
-}
-
-#right {
-  height: 200px;
-  position: absolute;
-  top: 40%;
-  right: 0;
-}
-
-#left {
-  height: 200px;
-  position: absolute;
-  top: 60%;
 }
 /*# sourceMappingURL=main.css.map */
