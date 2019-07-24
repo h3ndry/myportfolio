@@ -27,3 +27,69 @@
     }
   }
 }
+
+.home {
+  padding: 1.5rem;
+  background-color: var(--color-pri);
+  margin-right: 1rem;
+
+  &__icon {
+    width: 3rem;
+    height: 3rem;
+  }
+}
+
+.nav {
+  margin-right: auto;
+  
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__item {
+    &:not(:last-child){
+      margin-right: 1rem;
+    }
+  }
+
+  &__link {
+    &:link,
+    &:visited {
+      color: var(--color-grey-dark-1);
+      text-decoration: none;
+      font-weight: 700;
+      font-size: 1.4rem;
+    }
+  }
+}
+
+.social {
+
+  &__list {
+    list-style: none;
+    display: flex;
+  }
+
+  &__link { 
+    &:link,
+    &:visited {
+      margin-right: 1rem;
+    }
+  }
+
+  &__icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}
+
+.btn-hire,
+.btn-download {
+  color: var(--color-grey-dark-1);
+  font-size: 1.4rem;
+  border: none;
+  padding: .5rem 2rem;
+  background-color: var(--color-pri);
+  border-radius: 10rem;
+}
