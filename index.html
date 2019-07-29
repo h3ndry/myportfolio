@@ -8,7 +8,6 @@
 
   <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/ionicons.css">
   <title>Simanga Hendry | Computer Programmer</title>
 </head>
 
@@ -20,31 +19,42 @@
           Simanga Hendry
           <span>Computer Engineer</span>
         </h1>
-        <img src="img/user.jpg" alt="Picture of me" class="profile__photo">
+        <div class="profile__image">
+          <img src="img/user.jpg" alt="Picture of me" class="profile__photo">
+        </div>
         <div class="profile__details">
-          <p><span>Name:</span> Simanga Hendry</p>
-          <p><span>Surname:</span> Khoza</p>
-          <p><span>Contact:</span> simanhahk@gmail.com</p>
-          <p><span>Qualif.</span> Computer System Eng</p>
+          <ul>
+            <li><span>Name:</span> Simanga Hendry</li>
+            <li><span>Surname:</span> Khoza</li>
+            <li><span>Contact:</span> simanhahk@gmail.com</li>
+            <li><span>Qualif.</span> Computer System Eng</li>
+          </ul>
+
         </div>
 
-        <button class="btn-download">Download My CV</button>
+        <button class="btn-download">Download My CV
+          <span class="btn-download__icon-cont">
+            <svg class="btn-download__icon">
+              <use xlink:href="img/sprite.svg#icon-download3"></use>
+            </svg>
+          </span>
+        </button>
       </div>
     </div>
 
-    <div class="main-view">
+    <main class="main-view">
       <header class="header">
         <div class="home">
           <a href="#">
             <svg class="home__icon">
-              <use xlink:href="img/sprite.svg#icon-home"></use>
+              <use xlink:href="img/sprite.svg#icon-home3"></use>
             </svg>
           </a>
         </div>
 
         <nav class="nav">
           <ul class="nav__list">
-            <li class="nav__item"><a href="#" class="nav__link">Reasumer</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Resume</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Portfolio</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Blog</a></li>
             <li class="nav__item"><a href="#" class="nav__link">Contact</a></li>
@@ -55,31 +65,136 @@
           <ul class="social__list">
             <li class="social__item"><a href="#" class="social__link">
                 <svg class="social__icon">
-                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  <use xlink:href="img/sprite.svg#icon-twitter"></use>
                 </svg>
               </a></li>
             <li class="social__item"><a href="#" class="social__link">
                 <svg class="social__icon">
-                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  <use xlink:href="img/sprite.svg#icon-github"></use>
                 </svg>
               </a></li>
             <li class="social__item"><a href="#" class="social__link">
                 <svg class="social__icon">
-                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
                 </svg>
               </a></li>
             <li class="social__item"><a href="#" class="social__link">
                 <svg class="social__icon">
-                  <use xlink:href="img/sprite.svg#icon-chat"></use>
+                  <use xlink:href="img/sprite.svg#icon-youtube"></use>
                 </svg>
               </a></li>
           </ul>
         </div>
 
-        <button class="btn-hire">Hire Me</button>
-
+        <button class="btn-hire">Hire Me
+          <span class="btn-hire__cont">
+            <svg class="btn-hire__icon">
+              <use xlink:href="img/sprite.svg#icon-telegram"></use>
+            </svg>
+          </span>
+        </button>
       </header>
-    </div>
+
+      <div class="main-content">
+        <div class="section-about">
+          <h2 class="main-content__heading">About Me</h2>
+
+          <p class="main-content__paragraph">
+            Hello, My name is Simanga and I am from South Africal at Mpumalanga. I spend a lot of my free time at gym or
+            seaching for funny memes on the internet.
+            Every time I am depress I remind myself how big the universe is, an trough out our humanity eploring the
+            universe we have yet to find an element that isn't on our human body, perhabs we ar not living in the
+            universe,
+            the univers live within us.
+          </p>
+          <p class="main-content__paragraph">
+            I am studying to wards a national Diploma in computer systen engineering. I also completed online course on
+            udemy such as Javascript, Advance CSS and node.js. I have great communication skills and mathenaticak skils
+          </p>
+        </div>
+
+        <div class="section-skills">
+          <h2 class="main-content__heading">Skills</h2>
+          <div class="cards">
+            <div class="cards__card">
+              <svg class="cards__icon">
+                <use xlink:href="img/sprite.svg#icon-embed2"></use>
+              </svg>
+              <h3 class="cards__heading">Web Development</h3>
+              <p class="cards__paragraph">
+                Full stack web Development including node.js MySQL and PHP and Javescript
+              </p>
+
+            </div>
+            <div class="cards__card">
+              <svg class="cards__icon">
+                <use xlink:href="img/sprite.svg#icon-database"></use>
+              </svg>
+              <h3 class="cards__heading">Database</h3>
+              <p class="cards__paragraph">
+                Developing, Design and implementation relational database using query language SQL and oracle SQL</p>
+            </div>
+            <div class="cards__card">
+              <svg class="cards__icon">
+                <use xlink:href="img/sprite.svg#icon-cogs"></use>
+              </svg>
+              <h3 class="cards__heading">Software Enginner</h3>
+              <p class="cards__paragraph">
+                low level languages such as assembly and c/c++ and memory management
+              </p>
+            </div>
+            <div class="cards__card">
+              <svg class="cards__icon">
+                <use xlink:href="img/sprite.svg#icon-clipboard"></use>
+              </svg>
+              <h3 class="cards__heading">Industrial Intelligent</h3>
+              <p class="cards__paragraph">
+                Full stack web Development including node.js MySQL and PHP and Javascript
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-modules">
+          <h2 class="main-content__heading">Avarange Marks</h2>
+
+          <div class="marks">
+            <div class="mark">
+              <div class="animation-bar">
+                <span style="width: 60%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 66%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 80%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 60%"></span>
+              </div>
+            </div>
+            <div class="mark">
+              <div class="animation-bar">
+                <span style="width: 70%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 60%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 60%"></span>
+              </div>
+              <div class="animation-bar">
+                <span style="width: 60%"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p class="footer__paragraph">&copy; All rights reserved. Simanga Hendry</p>
+    </main>
+    
   </div>
 </body>
 

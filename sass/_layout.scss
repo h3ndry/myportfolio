@@ -1,27 +1,62 @@
 .container {
   max-width: 112rem;
-  margin: 4rem auto;
-  //background-color: pink;
+  margin: 6rem auto;
   display: flex;
-
-  min-height: 100vh;
+  align-items: flex-start;
+}
+@media screen and (max-width:768px) {
+  .container {
+    flex-direction: column;
+  }
 }
 
 .profile-view {
-  flex: 0 0 30%;
-  //background-color: brown;
-
-
+  flex: 0 0 22.5%;
+  padding-bottom: 3rem;
+  margin: 0 2rem 2rem 0;
+  border-radius: .5rem;
+  background-color:  var(--color-grey-light-2);
+  box-shadow: 0 .5rem 2rem rgba(black, .2);
+  overflow: hidden;
+}
+@media screen and (max-width:768px) {
+  .profile-view {
+    margin: 0 .5rem 2rem .5rem;
+  }
 }
 
 .main-view {
   flex: 1;
-  //background-color: aquamarine;
+
 }
 
 .header {
+  padding-right: 2rem;
+  background-color:  var(--color-grey-light-2);
   display: flex;
+  height: 7rem;
   align-items: center;
-  border-radius: 1rem;
+  border-radius: .5rem;
   overflow: hidden;
+  margin-bottom: 2rem;
 }
+
+.main-content {
+  background-color:  var(--color-grey-light-2);
+  border-radius: .5rem;
+  height: 100%;
+  box-shadow: var(--shadow-dark);
+  margin-bottom: 2rem;
+  //box-sizing: border-box;
+}
+
+.section-about,
+.section-modules {
+  padding: 5rem 3rem 1.5rem 3rem;
+}
+
+.section-skills {
+  padding: 5rem 3rem;
+  background-color: var(--color-grey-light-1);
+}
+

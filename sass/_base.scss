@@ -1,11 +1,12 @@
 // css Variable 
 :root {
   --color-pri: #ffc410;
+  --color-pri-2: #f1ce64;
   --color-sec: #ad5389;
   --color-text: #dddbdb;
 
   --color-grey-light-1: #faf9f9;
-  --color-grey-light-2: #f4f2f2;
+  --color-grey-light-2: #ffffff;
   --color-grey-light-3: #f0eeee;
   --color-grey-light-4: #ccc;
 
@@ -13,7 +14,7 @@
   --color-grey-dark-2: #777;
   --color-grey-dark-3: #999;
 
-  --shadow-dark: 0 2rem 6rem rgba(black, .3);
+  --shadow-dark: 0 1rem 3rem rgba(0,0,0, .1);
 }
 
 *,
@@ -33,7 +34,7 @@ body {
   line-height: 1.6;
   font-weight: 400;
   box-sizing: border-box;
-  background-color: var(--color-grey-light-1);
+  background-color: var(--color-grey-light-3);
 }
 
 
