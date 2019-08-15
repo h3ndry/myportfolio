@@ -40,7 +40,6 @@ body {
 
 .profile__name {
   padding: 1rem 2rem;
-  font-family: 'Roboto';
   letter-spacing: .3rem;
   text-transform: uppercase;
   color: var(--color-grey-dark-1);
@@ -48,7 +47,6 @@ body {
 }
 
 .profile__name span {
-  font-family: 'Roboto';
   font-weight: 200;
   line-height: 1;
   display: block;
@@ -111,6 +109,14 @@ body {
           columns: var(--color-grey-dark-1);
 }
 
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
 .home {
   padding: 0 2rem;
   height: 100%;
@@ -122,6 +128,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .home__icon {
@@ -140,13 +147,9 @@ body {
   display: flex;
 }
 
-.nav__item:not(:last-child) {
-  margin-right: 1rem;
-}
-
-.nav__link:link, .nav__link:visited {
-  font-family: 'Roboto';
+.nav__item {
   color: var(--color-grey-dark-1);
+  cursor: pointer;
   letter-spacing: .2rem;
   text-transform: uppercase;
   text-decoration: none;
@@ -154,8 +157,16 @@ body {
   font-size: 1.4rem;
 }
 
-.nav__link:hover, .nav__link:active {
+.nav__item:hover {
   color: var(--color-pri-2);
+}
+
+.nav__item.active {
+  color: var(--color-pri);
+}
+
+.nav__item:not(:last-child) {
+  margin-right: 1rem;
 }
 
 .social__list {
@@ -242,7 +253,6 @@ body {
 .main-content__heading {
   font-size: 1.8rem;
   display: block;
-  font-family: 'Roboto';
   color: var(--color-grey-dark-1);
   letter-spacing: .2rem;
   margin-bottom: 3rem;
@@ -258,7 +268,6 @@ body {
 }
 
 .main-content__paragraph {
-  font-family: 'Roboto';
   line-height: 1.9;
   font-size: 1.4rem;
   letter-spacing: .1rem;
@@ -297,14 +306,12 @@ body {
 .cards__heading {
   color: var(--color-grey-dark-1);
   font-size: 1.3rem;
-  font-family: 'Roboto';
   text-transform: capitalize;
   letter-spacing: .15rem;
   margin-bottom: 1rem;
 }
 
 .cards__paragraph {
-  font-family: 'Roboto';
   line-height: 1.7;
   font-size: 1.2rem;
   letter-spacing: .1rem;
@@ -383,7 +390,6 @@ body {
 .footer__paragraph {
   color: var(--color-grey-light-4);
   letter-spacing: .15rem;
-  font-family: 'Roboto';
   font-size: 1.2rem;
 }
 
@@ -450,7 +456,7 @@ body {
 .main-content {
   background-color: var(--color-grey-light-2);
   border-radius: .5rem;
-  height: 100%;
+  min-height: 100vh;
   -webkit-box-shadow: var(--shadow-dark);
           box-shadow: var(--shadow-dark);
   margin-bottom: 2rem;
@@ -467,7 +473,7 @@ body {
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .heading-pri {

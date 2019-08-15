@@ -2,14 +2,12 @@
   position: relative;
   &__name {
     padding: 1rem 2rem;
-    font-family: 'Roboto';
     letter-spacing: .3rem;
     text-transform: uppercase;
     color: var(--color-grey-dark-1);
     font-size: 1.8rem;
     
     span {
-      font-family: 'Roboto';
       font-weight: 200;
       line-height: 1;
       display: block;
@@ -75,6 +73,14 @@
   }
 }
 
+[data-tab-content] {
+  display: none;
+}
+
+.active[data-tab-content] {
+  display: block;
+}
+
 .home {
   padding: 0 2rem;
   height: 100%;
@@ -82,6 +88,7 @@
   margin-right: 1rem;
   display: flex;
   align-items: center;
+  cursor: pointer;
 
   &__icon {
     width: 2rem;
@@ -98,30 +105,26 @@
   }
 
   &__item {
+    color: var(--color-grey-dark-1);
+    cursor: pointer;
+    letter-spacing: .2rem;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 1.4rem;
+
+    &:hover {
+      color: var(--color-pri-2);
+    }
+
+    &.active {
+      color: var(--color-pri)
+    }
     &:not(:last-child){
       margin-right: 1rem;
     }
   }
 
-  &__link {
-    &:link,
-    &:visited {
-      font-family: 'Roboto';
-      color: var(--color-grey-dark-1);
-      letter-spacing: .2rem;
-      text-transform: uppercase;
-      text-decoration: none;
-      font-weight: 700;
-      font-size: 1.4rem;
-    }
-
-    &:hover,
-    &:active {
-      color: var(--color-pri-2);
-    }
-  }
-
-  
 }
 
 .social {
@@ -204,7 +207,6 @@
   &__heading {
     font-size: 1.8rem;
     display: block;
-    font-family: 'Roboto';
     color: var(--color-grey-dark-1);
     letter-spacing: .2rem;
     margin-bottom: 3rem;
@@ -220,7 +222,6 @@
   }
 
   &__paragraph {
-    font-family: 'Roboto';
     line-height: 1.9;
     font-size: 1.4rem;
     letter-spacing: .1rem;
@@ -253,7 +254,6 @@
   &__heading {
     color: var(--color-grey-dark-1);
     font-size: 1.3rem;
-    font-family: 'Roboto';
     text-transform: capitalize;
     letter-spacing: .15rem;
     margin-bottom: 1rem;
@@ -261,7 +261,6 @@
   }
 
   &__paragraph {
-    font-family: 'Roboto';
     line-height: 1.7;
     font-size: 1.2rem;
     letter-spacing: .1rem;
@@ -332,7 +331,6 @@
   &__paragraph {
     color: var(--color-grey-light-4);
     letter-spacing: .15rem;
-    font-family: 'Roboto';
     font-size: 1.2rem;
   }
 }
