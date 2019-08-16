@@ -1,5 +1,4 @@
 .profile {
-  position: relative;
   &__name {
     padding: 1rem 2rem;
     letter-spacing: .3rem;
@@ -32,27 +31,17 @@
 
     & ul {
       list-style: none;
-    }
+      padding-left: 2rem;
+      & li {
+        font-size: 1.3rem;
+        & span {
+          font-size: 1.5rem;
+          font-weight: 700;
+          letter-spacing: .1rem;
 
-    & ul li::before {
-      content: '';
-      top: 0;
-      left: 0;
-      position: absolute;
-      width: .5rem;
-      height: .5rem;
-      background: rgba(233, 33, 99, 1);
+        }
+      }
     }
-
-    &::before {
-      content: '';
-      position: absolute;
-      left: 10%;
-      width: 2px;
-      height: 50%;
-      background: #c5c5c5;
-    }
-    
     p span {
       columns: var(--color-grey-dark-1);
     }
@@ -114,12 +103,10 @@
 }
 
 .social {
-
   &__list {
     list-style: none;
     display: flex;
   }
-
   &__link { 
     &:link,
     &:visited {
@@ -127,14 +114,21 @@
     }
   }
 
+  &__item:hover &__icon {
+    transform: scale(1.5);
+    fill: var(--color-pri);
+  }
+
   &__icon {
     width: 1.5rem;
     height: 1.5rem;
+    transition: all .2s;
   }
 }
 
 .btn-hire,
 .btn-download {
+  cursor: pointer;
   display: flex;
   align-items: center;
   color: var(--color-grey-dark-1);
