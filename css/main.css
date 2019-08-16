@@ -67,18 +67,6 @@ body {
 .profile__details {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  /*  & p::before {
-      content: '';
-      top: 0;
-      left: 0;
-      position: absolute;
-      display: block;
-      width: .5rem;
-      height: .5rem;
-      background: rgba(233, 33, 99, 1);
-      border-radius: 50%;
-      box-shadow: 0 0 0 3px rgba(233, 33, 99, 1);
-    } */
 }
 
 .profile__details ul {
@@ -318,55 +306,40 @@ body {
   margin-bottom: 2rem;
 }
 
-.animation-bar {
-  position: relative;
-  display: block;
-  padding: .1rem;
-  font-size: .5rem;
-  line-height: .8rem;
-  border-radius: 3rem;
-  background: rgba(0, 0, 0, 0.1);
-  -webkit-box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.8);
-          box-shadow: inset 0 1px 2px rgba(0, 0, 0, 0.25), 0 1px rgba(255, 255, 255, 0.8);
-  margin-bottom: 3rem;
+.mark:not(:last-of-type) {
+  margin-bottom: 2rem;
 }
 
-.animation-bar span {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
+.mark__caption {
+  font-size: 1.4rem;
+  padding: .3rem;
+  letter-spacing: .1rem;
+}
+
+.mark__bar {
   height: .5rem;
-  border-radius: 10px 0 0 10px;
-  overflow: hidden;
+  /* Can be anything */
+  position: relative;
+  background: var(--color-grey-light-3);
+  border-radius: 25px;
+  -webkit-box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+          box-shadow: inset 0 -1px 1px rgba(255, 255, 255, 0.3);
+}
+
+.mark__bar > span {
+  display: block;
+  height: 100%;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
   background-color: var(--color-pri);
-  background-size: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(#f2395a), to(#b90c2b));
-  background-image: linear-gradient(to bottom, #f2395a, #b90c2b);
-}
-
-.animation-bar span::after {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background-size: 100%;
-  background: linear-gradient(45deg, #fff 25%, rgba(0, 0, 0, 0) 25%, rgba(0, 0, 0, 0) 50%, #fff 50%, #fff 75%, rgba(0, 0, 0, 0) 75%, rgba(0, 0, 0, 0));
-}
-
-.marks {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-.mark {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 45%;
-          flex: 0 0 45%;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(bottom, center), color-stop(37%, #2bc253), color-stop(69%, #54f054));
+  background-image: linear-gradient(center bottom, #2bc253 37%, #54f054 69%);
+  -webkit-box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+          box-shadow: inset 0 2px 9px rgba(255, 255, 255, 0.3), inset 0 -2px 6px rgba(0, 0, 0, 0.4);
+  position: relative;
+  overflow: hidden;
 }
 
 .footer {
@@ -473,7 +446,7 @@ body {
 }
 
 body {
-  font-family: 'Roboto', Verdana, Geneva, Tahoma, sans-serif;
+  font-family: 'Roboto', sans-serif,Verdana, Geneva, Tahoma;
 }
 
 .heading-pri {
